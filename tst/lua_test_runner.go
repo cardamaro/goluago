@@ -1,11 +1,12 @@
 package tst
 
 import (
-	"github.com/Shopify/go-lua"
 	"reflect"
 	"testing"
 
-	luatesting "github.com/Shopify/goluago/pkg/testing"
+	"github.com/Shopify/go-lua"
+
+	luatesting "github.com/cardamaro/goluago/pkg/testing"
 )
 
 func RunLuaTests(t *testing.T, libraryCallback func(l *lua.State), filename string) {

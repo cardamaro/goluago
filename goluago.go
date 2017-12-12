@@ -2,17 +2,17 @@ package goluago
 
 import (
 	"github.com/Shopify/go-lua"
-	"github.com/Shopify/goluago/pkg/crypto/hmac"
-	"github.com/Shopify/goluago/pkg/encoding/base64"
-	"github.com/Shopify/goluago/pkg/encoding/json"
-	"github.com/Shopify/goluago/pkg/env"
-	"github.com/Shopify/goluago/pkg/fmt"
-	"github.com/Shopify/goluago/pkg/net/url"
-	"github.com/Shopify/goluago/pkg/regexp"
-	"github.com/Shopify/goluago/pkg/strings"
-	"github.com/Shopify/goluago/pkg/time"
-	"github.com/Shopify/goluago/pkg/uuid"
-	"github.com/Shopify/goluago/util"
+	"github.com/cardamaro/goluago/pkg/crypto/hmac"
+	"github.com/cardamaro/goluago/pkg/encoding/base64"
+	"github.com/cardamaro/goluago/pkg/encoding/json"
+	"github.com/cardamaro/goluago/pkg/env"
+	"github.com/cardamaro/goluago/pkg/fmt"
+	"github.com/cardamaro/goluago/pkg/net/url"
+	"github.com/cardamaro/goluago/pkg/regexp"
+	"github.com/cardamaro/goluago/pkg/strings"
+	"github.com/cardamaro/goluago/pkg/time"
+	"github.com/cardamaro/goluago/pkg/uuid"
+	"github.com/cardamaro/goluago/util"
 )
 
 func Open(l *lua.State) {

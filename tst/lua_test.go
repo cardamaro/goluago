@@ -1,8 +1,9 @@
 package tst
 
 import (
-	"github.com/Shopify/goluago"
 	"testing"
+
+	"github.com/cardamaro/goluago"
 )
 
 var tests = []struct {

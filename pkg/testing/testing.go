@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/Shopify/go-lua"
-	"github.com/Shopify/goluago/util"
+	"github.com/cardamaro/goluago/util"
 )
 
 func RunLuaTestString(t *testing.T, requireCallback func(l *lua.State), luaSource string) {

@@ -1,9 +1,10 @@
 package regexp
 
 import (
-	"github.com/Shopify/go-lua"
-	"github.com/Shopify/goluago/util"
 	"regexp"
+
+	"github.com/Shopify/go-lua"
+	"github.com/cardamaro/goluago/util"
 )
 
 // Open exposes the regexp functions to Lua code in the `goluago/regexp`

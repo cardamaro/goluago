@@ -1,9 +1,10 @@
 package strings
 
 import (
-	"github.com/Shopify/go-lua"
-	"github.com/Shopify/goluago/util"
 	"strings"
+
+	"github.com/Shopify/go-lua"
+	"github.com/cardamaro/goluago/util"
 )
 
 func Open(l *lua.State) {
@@ -19,6 +20,7 @@ var stringLibrary = []lua.RegistryFunction{
 	{"split", split},
 	{"trim", trim},
 	{"replace", replace},
+	{"contains", contains},
 }
 
 func split(l *lua.State) int {
@@ -33,6 +35,13 @@ func split(l *lua.State) int {
 func trim(l *lua.State) int {
 	str := lua.CheckString(l, 1)
 	l.PushString(strings.TrimSpace(str))
+	return 1
+}
+
+func contains(l *lua.State) int {
+	str := lua.CheckString(l, 1)
+	sub := lua.CheckString(l, 2)
+	l.PushBoolean(strings.Contains(str, sub))
 	return 1
 }
 

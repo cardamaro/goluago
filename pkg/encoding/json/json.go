@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 
 	"github.com/Shopify/go-lua"
-	"github.com/Shopify/goluago/util"
+	"github.com/cardamaro/goluago/util"
 )
 
 func Open(l *lua.State) {
